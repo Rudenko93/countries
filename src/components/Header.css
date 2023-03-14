@@ -1,0 +1,26 @@
+.maiin {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.header {
+  max-width: 1440px;
+}
+.header-container {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: inline-block;
+}
+
+.modeSwitcher {
+}
