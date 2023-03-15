@@ -6,11 +6,26 @@
   box-sizing: border-box;
 }
 
+[data-theme="dark"] {
+  --body-text: hsl(0, 0%, 100%);
+  --body-bg: hsl(207, 26%, 17%);
+  --body-ui: hsl(209, 23%, 22%);
+  --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
+}
+
+[data-theme="light"] {
+  --body-text: hsl(200, 15%, 8%);
+  --body-bg: hsl(0, 0%, 98%);
+  --body-ui: hsl(0, 0%, 100%);
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 body {
+  margin: 0 2rem;
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  /* min-width: 100vh; */
-  /* align-items: center;
-  justify-content: center; */
+  color: var(--body-text);
+  font-size: 14px;
+  background-color: var(--body-bg);
 }
