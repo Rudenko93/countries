@@ -29,3 +29,59 @@ body {
   font-size: 14px;
   background-color: var(--body-bg);
 }
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
+.header {
+  width: 100%;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--body-ui);
+  box-shadow: var(--shadow);
+  padding: 2rem 0;
+}
+
+.modeSwitcher {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.controls {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  background-color: var(--body-ui);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.search {
+  margin-left: 2rem;
+  border: none;
+  outline: none;
+  background-color: var(--body-ui);
+  color: var(--body-text);
+}
