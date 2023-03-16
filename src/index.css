@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 :root {
@@ -90,4 +91,38 @@ body {
   outline: none;
   background-color: var(--body-ui);
   color: var(--body-text);
+}
+
+.list {
+  width: 100%;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 576px) and (max-width: 767px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 376px) and (max-width: 575px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 150px;
 }
