@@ -10,7 +10,7 @@ const options = [
 
 export const CustomSelect = () => {
   return (
-    <div>
+    <div className="customSelect">
       <Select
         styles={{
           container: (baseStyles) => ({
@@ -18,6 +18,10 @@ export const CustomSelect = () => {
             backgroundColor: "var(--body-ui)",
             color: "var(--body-text)",
             border: "none",
+            width: 200,
+            fontFamily: "var(--family)",
+            boxShadow: "var(--shadow)",
+            padding: "1rem 0 ",
           }),
           valueContainer: (baseStyles) => ({
             ...baseStyles,
@@ -30,17 +34,15 @@ export const CustomSelect = () => {
             backgroundColor: "var(--body-ui)",
             color: "var(--body-text)",
             border: "none",
-            boxShadow: "var(--shadow)",
+            boxShadow: "none",
+            cursor: "pointer",
           }),
           option: (baseStyles, state) => ({
             ...baseStyles,
             cursor: "pointer",
-            backgroundColor: "var(--body-ui)",
             color: "var(--body-text)",
+            paddingRight: "0.25rem",
             backgroundColor: state.isSelected
-              ? "var(--body-bg)"
-              : "var(--body-ui)",
-            backgroundColor: state.isFocused
               ? "var(--body-bg)"
               : "var(--body-ui)",
           }),
@@ -48,21 +50,31 @@ export const CustomSelect = () => {
             ...baseStyles,
             backgroundColor: "var(--body-ui)",
             color: "var(--body-text)",
+            paddingLeft: "0.25rem",
+            fontFamily: "var(--family)",
           }),
           placeholder: (baseStyles) => ({
             ...baseStyles,
             backgroundColor: "var(--body-ui)",
             color: "var(--body-text)",
+            paddingLeft: "0.25rem",
+            fontFamily: "var(--family)",
           }),
           menuList: (baseStyles) => ({
             ...baseStyles,
             padding: "0px",
+            boxShadow: "var(--shadow)",
+          }),
+          indicatorSeparator: (baseStyles) => ({
+            ...baseStyles,
+            display: "none",
           }),
         }}
         options={options}
         placeholder="Filter by Region"
         isSearchable={false}
         isClearable
+        indicatorSeparator={false}
       />
     </div>
   )

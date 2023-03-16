@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --family: "Nunito Sans", sans-serif;
+}
+
 [data-theme="dark"] {
   --body-text: hsl(0, 0%, 100%);
   --body-bg: hsl(207, 26%, 17%);
