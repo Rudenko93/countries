@@ -10,7 +10,7 @@ const options = [
 
 export const CustomSelect = () => {
   return (
-    <div className="customSelect">
+    <div className="custom-select">
       <Select
         styles={{
           container: (baseStyles) => ({
@@ -21,7 +21,7 @@ export const CustomSelect = () => {
             width: 200,
             fontFamily: "var(--family)",
             boxShadow: "var(--shadow)",
-            padding: "1rem 0 ",
+            padding: "0.3rem 0 ",
           }),
           valueContainer: (baseStyles) => ({
             ...baseStyles,
@@ -68,6 +68,10 @@ export const CustomSelect = () => {
           indicatorSeparator: (baseStyles) => ({
             ...baseStyles,
             display: "none",
+          }),
+          indicatorsContainer: (baseStyles) => ({
+            ...baseStyles,
+            padding: "0px",
           }),
         }}
         options={options}

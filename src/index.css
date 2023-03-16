@@ -25,56 +25,58 @@
 }
 
 body {
-  margin: 0 2rem;
   font-family: "Nunito Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
   color: var(--body-text);
   font-size: 14px;
   background-color: var(--body-bg);
 }
 
-.main {
+.header-wrapper {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  background-color: var(--body-ui);
+  box-shadow: var(--shadow);
+  padding: 1rem 0;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
+  margin: 0 2rem;
 }
+
 .header {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
   cursor: pointer;
 }
 
-.headerContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--body-ui);
-  box-shadow: var(--shadow);
-  padding: 2rem 0;
-}
-
-.modeSwitcher {
+.mode-switcher {
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.controls {
+.home-wrapper {
   display: flex;
+  justify-content: center;
+  background-color: var(--body-bg);
   margin: 2rem 0;
-  justify-content: space-between;
 }
 
-.inputContainer {
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input-container {
   background-color: var(--body-ui);
   padding: 1rem 2rem;
   display: flex;

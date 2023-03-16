@@ -3,16 +3,16 @@ import { ModeSwitcher } from "./ModeSwitcher"
 
 export const Header = () => {
   return (
-    <div className="main">
-      <div className="container">
-        <div className="header">
-          <div className="headerContent">
+    <>
+      <div className="header-wrapper">
+        <div className="container">
+          <div className="header">
             <h2 className="title ">Where in the world?</h2>
             <ModeSwitcher />
           </div>
-          <Outlet />
         </div>
       </div>
-    </div>
+      <Outlet />
+    </>
   )
 }

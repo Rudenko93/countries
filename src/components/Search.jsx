@@ -4,7 +4,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2"
 export const Search = () => {
   const [search, setSearch] = useState("")
   return (
-    <div className="inputContainer">
+    <div className="input-container">
       <HiMagnifyingGlass />
       <input
         className="search"

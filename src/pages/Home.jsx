@@ -5,12 +5,14 @@ import { CustomSelect } from "../components/CustomSelect"
 
 export const Home = () => {
   return (
-    <div>
-      <Controls>
-        <Search />
-        <CustomSelect />
-      </Controls>
-      <List />
+    <div className="home-wrapper">
+      <div className="container">
+        <Controls>
+          <Search />
+          <CustomSelect />
+        </Controls>
+        <List />
+      </div>
     </div>
   )
 }

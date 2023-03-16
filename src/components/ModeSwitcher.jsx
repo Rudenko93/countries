@@ -19,7 +19,7 @@ export const ModeSwitcher = () => {
   }
 
   return (
-    <div onClick={toggleTheme} className="modeSwitcher">
+    <div onClick={toggleTheme} className="mode-switcher">
       {theme === "light" ? <HiOutlineMoon size="14px" /> : <HiMoon />}
       <h3>Dark mod</h3>
     </div>
