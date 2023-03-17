@@ -26,7 +26,7 @@ export const List = () => {
       {list.map((country) => (
         <Card
           title={country.title}
-          src={country.thumbnailUrl}
+          src={country.url}
           albumId={country.albumId}
           key={country.id}
         />
