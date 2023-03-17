@@ -1,3 +1,4 @@
+import axios from "axios"
 import { useEffect, useState } from "react"
 import { Card } from "../components/Card"
 
@@ -7,11 +8,13 @@ export const List = () => {
   useEffect(() => {
     const getCountries = async () => {
       try {
-        const res = await fetch(
-          "https://jsonplaceholder.typicode.com/photos?_limit=10"
+        const res = await axios(
+          "https://jsonplaceholder.typicode.com/photos?_page=12"
         )
-        const json = await res.json()
-        setList(json)
+        const data = await res
+        console.log(data)
+        console.log(data.link)
+        setList(data.data)
       } catch (error) {
         setStatus("error")
       }
